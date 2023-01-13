@@ -31,13 +31,36 @@ color: #01A9DB;
 `;
 
 export const Menu = styled.ul`
+height: 100%;
+paddig: 0.5rem 1.5rem;
 display: flex;
 font-size: 1.2rem;
 font-family: 'Righteous', cursive;
-align-items: center;
-color: #01A9DB;
+font-weight:400;
 
+
+}
+`;
+export const MenuItem = styled.li`
+height: 100%;
+paddig: 0.5rem 1.5rem;
+display: flex;
+font-size: 1.2rem;
+font-family: 'Righteous', cursive;
+font-weight:400;
+
+
+&:hover{
+    background-color: white;
+    border-bottom: 0.3rem solid black;
+    transition: 0.4s ease-in;
+    
+}
 `;
 
+export const MenuItemLink = styled.a`
+text-decoration: none;
+color: #01A9DB;
+display: flex,
 
-
+`
