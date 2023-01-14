@@ -5,8 +5,7 @@
   flex-wrap: wrap;
   background-image: url(../../../assets/cowback.jpg);
   background-attachment: fixed;
-  gap: 15px;
-  margin-top: 50px;
+  
 
   p {
     font-size: 15px;
@@ -21,27 +20,76 @@
   align-items: center;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin:80px 40px 80px 40px
 }
 
 .btn {
-    background-color: #01a9db;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 15px 20px;
-    border-radius: 2em;
+    padding: 1.1em 2em;
+    background: none;
+    border: 2px solid #fff;
+    font-size: 15px;
+    color: #131313;
     cursor: pointer;
-    transition: 0.1s ease;
-    border-width: 0;
-    box-shadow: 1px 5px 0 0 #0e285d;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    border-radius: 12px;
+    background-color: #ecd448;
+    font-weight: bolder;
+    box-shadow: 0 2px 0 2px #000;
+    font-family: "Righteous", cursive;
+   }
+   
+   .btn:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color: #ff6700;
+    top: 50%;
+    transform: skewX(30deg) translate(-150%, -50%);
+    transition: all 0.5s;
+   }
+   
+   .btn:hover {
+    background-color: #4cc9f0;
+    color: #fff;
+    box-shadow: 0 2px 0 2px #0d3b66;
+   }
+   
+   .btn:hover::before {
+    transform: skewX(30deg) translate(150%, -50%);
+    transition-delay: 0.1s;
+   }
+   
+   .btn:active {
+    transform: scale(0.9);
+   }
+
+   .btnsnext {
+    margin:10px;
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: rgb(23, 206, 247);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
   }
   
-  .btn:hover {
-    transform: translateY(-4px);
-    box-shadow: 1px 9px 0 0 #0e285d;
+  .btnsnext:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
   }
   
-  .btn:active {
-    transform: translateY(4px);
-    box-shadow: 0px 0px 0 0 #0e285d;
+  .btnsnext:active {
+    transform: translateY(-1px);
   }

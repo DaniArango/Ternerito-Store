@@ -9,15 +9,15 @@ import { ProductsProvider } from './context/ProductsState';
 function App() {
   return (
     <div>
-      <BrowserRouter>
       <ProductsProvider>
+       <BrowserRouter>
       <Header />
       <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/products" element={<Products />} /> 
       </Routes>
-      </ProductsProvider>
       </BrowserRouter>
+      </ProductsProvider>
     </div>
   );
 }

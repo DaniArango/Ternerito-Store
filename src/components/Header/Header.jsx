@@ -1,5 +1,5 @@
 import React from "react";
-import {IconLogo} from "./Header.elements";
+import { IconLogo} from "./Header.elements";
 import { SiHappycow } from "react-icons/si";
 import { Link } from "react-router-dom";
 import "./Header.scss"
