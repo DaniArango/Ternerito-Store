@@ -1,68 +1,47 @@
-.container-products{
-    
-    display: flex;
-    flex-direction:row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background-image: url(../../../assets/cowback.jpg);
-    background-attachment: fixed;
-    gap: 15px;
+.container-products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-image: url(../../../assets/cowback.jpg);
+  background-attachment: fixed;
+  gap: 15px;
+  margin-top: 50px;
 
-   
-
-    
-    p {
-        font-size: 15px;
-        text-align: center;
-        font-family: 'Josefin Sans', sans-serif;
-    }
-
-}   
-
-.products{
-
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    
+  p {
+    font-size: 15px;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+  }
 }
 
-.ant-btn {
-    border: unset;
-    border-radius: 15px;
-    color: #212121;
-    z-index: 1;
-    background: #e8e8e8;
-    font-size: 20px;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-    transition: all 250ms;
-    overflow: hidden;
-    margin: 5px;
-   
-    
-    
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.btn {
+    background-color: #01a9db;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 2em;
+    cursor: pointer;
+    transition: 0.1s ease;
+    border-width: 0;
+    box-shadow: 1px 5px 0 0 #0e285d;
   }
   
-  .ant-btn::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    border-radius: 15px;
-    z-index: -1;
-    background-image: linear-gradient(-225deg, #52e16a9f 0%, #fbe9299a 48%, #beec6f 100%);
-    transition: all 250ms;
-    
+  .btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 1px 9px 0 0 #0e285d;
   }
   
-  .ant-btn:hover::before {
-    width: 100%;
-    
-  }
-  
-  .ant-card{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  .btn:active {
+    transform: translateY(4px);
+    box-shadow: 0px 0px 0 0 #0e285d;
   }

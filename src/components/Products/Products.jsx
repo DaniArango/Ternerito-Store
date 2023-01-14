@@ -1,6 +1,5 @@
 import React, { useContext, useEffect } from "react";
 import { ProductsContext } from "../../context/ProductsState";
-import { Button, Card } from "antd";
 import { BsFillCartCheckFill, BsFillCartDashFill } from "react-icons/bs";
 import "./Products.scss";
 
@@ -14,32 +13,35 @@ const ApiFake = () => {
   return (
     
     <div className="container-products">
+     
       {fakeProducts.map((productfake) => {
         return (
           
-          <Card>
+          
             <div key={productfake.id} className="products">
+              
             <p
             
               style={{
-                width: 300,
+                width: 250,
               }}
             >
-              
               {productfake.title}
+              <hr />
             </p>
-            <hr />
+            
             <br />
             <img src={productfake.image} width="150" height="150"  />
             <br />
             <br />
             <p>Category: {productfake.category}</p>
             <p>{productfake.price}€</p>
+            <button className="btn"> <BsFillCartCheckFill /> </button>
             <br />
-            <Button> <BsFillCartCheckFill /> </Button>
+            
             
             </div>
-          </Card>
+        
         );
       })}
       ;
