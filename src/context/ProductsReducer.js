@@ -3,7 +3,7 @@ const products = (state, action) => {
       case "GET_APIPRODUCTS":
         return {
           ...state,
-          products: action.payload,
+          fakeProducts: action.payload,
         };
 
     };

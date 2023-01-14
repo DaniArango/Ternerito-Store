@@ -8,23 +8,23 @@ const ApiFake = () => {
     getApiProducts();
   }, []);
 
-  const productsfake = fakeProducts.map((productfake) => {
+  return (
+    <div className="container-products">
+    
+  {fakeProducts.map((productfake) => {
     return (
       <div key={productfake.id}>
         <div>
           <p >{productfake.title}</p>
           <p >{productfake.category}</p>
-          <img src={productfake.image } width="350" height="500" alt=""  /> <br />
+          <p >{productfake.price}</p>
+          <img src={productfake.image } width="100" height="100" alt=""  /> <br />
           <p >{productfake.description}</p>
-          
-
+        </div>  
         </div>
-      </div>
-    );
-  }); 
-
-
-  return <div>{productsfake}</div>;
-};
+    )}
+  )};
+  </div>
+  )};
 
 export default ApiFake;
