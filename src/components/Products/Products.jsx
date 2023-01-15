@@ -17,6 +17,7 @@ const ApiFake = () => {
 
   return (
     <div className="productsview">
+      
       <div className="container-products">
         {fakeProducts
           .filter((productfake, index) => {
