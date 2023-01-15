@@ -5,10 +5,10 @@ import { AiOutlineDoubleRight } from "react-icons/ai";
 import "./Products.scss";
 
 const ApiFake = () => {
+  
   const { fakeProducts, getApiProducts } = useContext(ProductsContext);
+
   const [page, setPage]=useState(1)
-
-
   const limit = 8;
 
   useEffect(() => {
@@ -17,7 +17,6 @@ const ApiFake = () => {
 
   return (
     <div className="productsview">
-      
       <div className="container-products">
         {fakeProducts
           .filter((productfake, index) => {
